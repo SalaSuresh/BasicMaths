@@ -25,6 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginBottom="15dp"
             android:text="Beginner"
             android:textColor="@color/color_white"
             android:background="@color/color_green"/>
@@ -34,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
             android:text="Intermediate"
             android:textColor="@color/color_white"
             android:background="@color/color_orange"/>
@@ -44,7 +45,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_marginTop="15dp"
             android:text="Expert"
             android:textColor="@color/color_white"
             android:background="@color/color_red"
