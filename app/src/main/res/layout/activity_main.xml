@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#1a1a1a"
+    android:background="@color/color_white"
     tools:context="com.suresh.basicmaths.MainActivity">
 
     <LinearLayout
@@ -25,9 +25,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="BEGINEER"
-            android:textColor="#ffffff"
-            android:background="#00e673"/>
+            android:text="Beginner"
+            android:textColor="@color/color_white"
+            android:background="@color/color_green"/>
 
         <Button
             android:id="@+id/button_intermediate"
@@ -35,9 +35,9 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_marginTop="15dp"
-            android:text="INTERMEDIATE"
-            android:textColor="#ffffff"
-            android:background="#ffa700"/>
+            android:text="Intermediate"
+            android:textColor="@color/color_white"
+            android:background="@color/color_orange"/>
 
         <Button
             android:id="@+id/button_expert"
@@ -45,9 +45,10 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_marginTop="15dp"
-            android:text="EXPERT"
-            android:textColor="#ffffff"
-            android:background="#d62d20"/>
+            android:text="Expert"
+            android:textColor="@color/color_white"
+            android:background="@color/color_red"
+            android:layout_marginBottom="15dp"/>
         <!-- test-->
 
     </LinearLayout>
