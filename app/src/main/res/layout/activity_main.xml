@@ -7,8 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/color_white"
-    tools:context="com.suresh.basicmaths.MainActivity">
+    android:background="@color/color_white" >
 
     <LinearLayout
         android:id="@+id/layout_level_selection"
@@ -49,7 +48,6 @@
             android:textColor="@color/color_white"
             android:background="@color/color_red"
             android:layout_marginBottom="15dp"/>
-        <!-- test-->
 
     </LinearLayout>
 
