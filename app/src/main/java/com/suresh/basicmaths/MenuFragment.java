@@ -14,14 +14,14 @@ import android.widget.Button;
  */
 public class MenuFragment extends Fragment {
     Button button_Beginner, button_Intermediate, button_Expert;
-    Typeface font, font2;
+    Typeface font;//, font2;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_main, container, false);
+        View rootView = inflater.inflate(R.layout.menu, container, false);
         font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Socialize.ttf");
-        font2 = Typeface.createFromAsset(getActivity().getAssets(), "fonts/roboto.thin.ttf");
+//        font2 = Typeface.createFromAsset(getActivity().getAssets(), "fonts/roboto.thin.ttf");
         button_Beginner = (Button) rootView.findViewById(R.id.button_beginner);
-        button_Beginner.setTypeface(font2);
+        button_Beginner.setTypeface(font);
         button_Beginner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +37,20 @@ public class MenuFragment extends Fragment {
         });
         button_Intermediate = (Button) rootView.findViewById(R.id.button_intermediate);
         button_Intermediate.setTypeface(font);
+        button_Intermediate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        button_Expert = (Button) rootView.findViewById(R.id.button_expert);
+        button_Expert.setTypeface(font);
+        button_Expert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         return rootView;
     }
 }

@@ -37,8 +37,8 @@
             android:layout_marginBottom="15dp"
             android:text="Intermediate"
             android:textColor="@color/color_white"
-            android:background="@color/color_orange"
-            android:drawableRight="@drawable/symbol_lock"/>
+            android:background="@color/color_orange"/>
+            <!--android:drawableRight="@drawable/symbol_lock"/>-->
 
         <Button
             android:id="@+id/button_expert"
@@ -48,8 +48,8 @@
             android:text="Expert"
             android:textColor="@color/color_white"
             android:background="@color/color_red"
-            android:layout_marginBottom="15dp"
-            android:drawableRight="@drawable/symbol_lock"/>
+            android:layout_marginBottom="15dp"/>
+            <!--android:drawableRight="@drawable/symbol_lock"/>-->
 
     </LinearLayout>
 </RelativeLayout>

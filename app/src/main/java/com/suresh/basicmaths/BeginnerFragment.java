@@ -1,6 +1,7 @@
 package com.suresh.basicmaths;
 
 import android.app.Fragment;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,17 +25,17 @@ public class BeginnerFragment extends Fragment implements Animation.AnimationLis
     Random r = new Random();
     //Animation
     Animation animZoomIn;
+    Typeface font;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootview = inflater.inflate(R.layout.mode_beginner, container, false);
         String value = getArguments().getString("YourKey");
-        Toast.makeText(getActivity(), "onCreateView: "+value, Toast.LENGTH_SHORT).show();
-        // load the animation
+        font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Socialize.ttf");
         animZoomIn = AnimationUtils.loadAnimation(getActivity(), R.anim.zoom_in);
-        // set animation listener
         animZoomIn.setAnimationListener(this);
 
         text_eqa = (TextView) rootview.findViewById(R.id.textView1);
+        text_eqa.setTypeface(font);
         text_eqa.startAnimation(animZoomIn);
         button_yes = (Button) rootview.findViewById(R.id.button_yes);
         button_yes.setOnClickListener(new View.OnClickListener() {
@@ -58,8 +59,6 @@ public class BeginnerFragment extends Fragment implements Animation.AnimationLis
         logic();
         return rootview;
     }
-
-
 
     public void logic(){
         decider = r.nextInt(5-1) + 1;//5(1+,2-,3*,4/)
