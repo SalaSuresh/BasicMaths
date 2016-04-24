@@ -26,6 +26,9 @@ public class MenuFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Fragment newFragment = new BeginnerFragment();
+                Bundle args = new Bundle();
+                args.putString("YourKey", "YourValue");
+                newFragment.setArguments(args);
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(android.R.id.content, newFragment);
                 transaction.addToBackStack(null);
